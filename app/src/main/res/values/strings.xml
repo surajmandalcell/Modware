@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Modware</string>
     <string name="mod_item_1">Youtube Vanced</string>
+    <string name="Youtube_vanced_description">A modified version of the youtube app that supports background play and ad
+        blocking with dark mode
+    </string>
 </resources>
