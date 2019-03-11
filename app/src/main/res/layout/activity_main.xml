@@ -8,24 +8,34 @@
          android:background="#0c0717"
         tools:context=".MainActivity">
 
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:background="#0c0717"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="125dp"
         android:layout_height="115dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
         android:contentDescription="@string/mod_item_1"
         android:scaleType="centerInside"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
         app:srcCompat="@drawable/vanced_logo" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="150dp"
         android:layout_height="26dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
         android:fontFamily="@font/roboto"
         android:lineSpacingExtra="8sp"
         android:text="@string/mod_item_1"
@@ -35,18 +45,16 @@
         android:textSize="18sp"
         android:typeface="normal"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/frameLayout" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="203dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:fontFamily="@font/roboto"
-        android:inputType="textMultiLine"
         android:maxLines="20"
         android:text="@string/Youtube_vanced_description"
         android:textAlignment="textStart"
@@ -54,8 +62,7 @@
         android:textColor="@android:color/darker_gray"
         android:textSize="12sp"
         android:typeface="normal"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
